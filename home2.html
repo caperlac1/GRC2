@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRC Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 1px;
+        }
+        nav {
+            background-color: #ff7200;
+            padding: 13px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 220px;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .product-card p {
+            color: #777;
+        }
+        .product-card .price {
+            font-size: 18px;
+            color: #f39c12;
+            margin: 10px 0;
+        }
+        .cta-button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GRC Store</h1>
+    <p>Find the Best Deals on Latest Electronics</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="smartphone.html">Smartphone</a>
+    <a href="Tablets.html">Tablets</a>
+</nav>
+
+<section id="home" style="padding: 20px;">
+    <h2>Welcome to GRC Store</h2>
+    <p>Your one-stop shop for the latest gadgets and electronics. Explore our wide selection of phones, laptops, and accessories.</p>
+</section>
+
+<section id="products" style="padding: 20px;">
+    <h2>Our Products</h2>
+    <div class="product-list">
+        <!-- Product 1 to Product 20 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVDOGhxoI3_tMYJISsJQcBz6B17lyyC9KbA&s" alt="Iphone 16 Pro Max">
+              <h3>Iphone 16 Pro Max (256 GB)</h3>
+            <p>The latest Iphone with high-speed performance and an excellent camera.</p>
+            <div class="price">₱81,990.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://compasia.com.ph/cdn/shop/files/macbook-pro-m2-max-12-core-cpu-and-38-core-gpu-16-early-2023-785165_800x.png?v=1741376909" alt="Macbook Pro M2 Max">
+            <h3>Macbook Pro M2 Max</h3>
+            <p>A powerful laptop for professionals with the latest processor and graphics.</p>
+            <div class="price">₱116,499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://t4.ftcdn.net/jpg/05/89/48/75/240_F_589487558_WvhhGITGYL3emDMGwjYNCvTriQXpdmzC.jpg" alt=" Airpods Pro">
+            <h3>Airpods pro</h3>
+            <p>High-quality sound with noise cancellation for the best music experience.</p>
+            <div class="price">₱13,852.90</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://compasia.com.ph/cdn/shop/files/apple-watch-series-10-gps-cellular-42mm-aluminum-hongkong-variant-111718_800x.png?v=1741376909" alt="Apple Watch Series 10">
+            <h3>Apple Watch Series 10</h3>
+            <p>Track your fitness goals with this sleek and powerful smartwatch.</p>
+            <div class="price">₱25,450.99</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://www.lg.com/content/dam/channel/wcms/ph/images/tvs/70ut8050psb_aph_eacm_ph_c/gallery/large02.jpg" alt="LG 4K Smart TV">
+            <h3>LG 4K Smart TV <br> (75 Inch)</h3>
+            <p>Experience stunning visuals with this latest 4K Ultra HD TV.</p>
+            <div class="price">₱68,990.00</div>
+            <a href="#" class="cta-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://t4.ftcdn.net/jpg/03/57/13/43/240_F_357134347_AztRpwYCjbtgeM9l6u1NbRSvGOiATjxT.jpg" alt="Product 6">
+            <h3>PlayStation 5</h3>
+            <p>Play the latest games with this high-performance gaming console.</p>
+            <div class="price">₱28,990.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71S889xFarL._AC_SX466_.jpg" width="100" height="300" >
+            <h3>Apple Airpods Max</h3>
+            <p>Enjoy your music without distractions using these noise-cancelling headphones.</p>
+            <div class="price">₱32,990.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://i.ebayimg.com/images/g/YxQAAOSwViJm5PVm/s-l400.jpg" width="100" alt="HomePod (2nd Gen) Smart Speaker">
+            <h3>HomePod (2nd Gen) Smart Speaker</h3>
+            <p>Control your smart home with this advanced voice assistant speaker.</p>
+            <div class="price">₱2,299.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://media.wired.com/photos/6504b2a1afe02332db973557/master/w_960,c_limit/Ugreen_Power_Bank-SOURCE-Ugreen-Gear.jpg" height="100" alt="Portable Power Bank">
+            <h3>Portable Power Bank</h3>
+            <p>Never run out of battery with this portable power bank.</p>
+            <div class="price">₱299.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://d1b5h9psu9yexj.cloudfront.net/65461/Tribit-StormBox-Mini_20241021-200341_full.jpeg" alt="Bluetooth Speaker">
+            <h3>Bluetooth Speaker</h3>
+            <p>Take your music anywhere with this portable Bluetooth speaker.</p>
+        <div class="price">₱499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://cdn.shopify.com/s/files/1/0565/5134/2275/files/Huawei_MatePad_T10_480x480.png?v=1675736414" alt="Huawei MatePad T10" width="150" height="150">
+            <h3>Huawei MatePad T10</h3>
+            <p>Great for work or play, this tablet offers performance and portability.</p>
+            <div class="price">₱5,499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://compasia.com.ph/cdn/shop/products/galaxy-z-flip5-242979_600x.png?v=1737540023" alt="Galaxy Z Flip 5" width="170">
+            <h3>Galaxy Z Flip 5</h3>
+            <p>Next-gen smartphone with AI camera and powerful battery.</p>
+            <div class="price">₱13,950.70</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://as2.ftcdn.net/jpg/04/86/52/39/1000_F_486523995_A1an290EQ3LTNG2JuDlx2zW6zTydjUKP.jpg" alt="VR Headset">
+            <h3>VR Headset</h3>
+            <p>Immerse yourself in the world of virtual reality with this advanced VR headset.</p>
+            <div class="price">₱5,950.00</div>
+            <a href="#" class="cta-button">Buy Now</a>
+        </div>
+        <div class="product-card">
+            <img src="https://www.digitaltrends.com/wp-content/uploads/2024/05/Sony-Alpha-ZV-E10-1.jpg?fit=720%2C480&p=1" alt="Camera">
+            <h3>Camera</h3>
+            <p>Everything you need for professional photography.</p>
+            <div class="price">₱2,950.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/smart-home-hub-with-voiceactivated-virtual-assist-white-background_431161-49735.jpg?w=996" alt="Smart Home Hub">
+            <h3>Smart Home Hub</h3>
+            <p>Control all your smart devices with this hub that integrates everything.</p>
+            <div class="price">₱2,499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/51-EAJP4oAL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Bluetooth Earphones" width="100" height="180">
+            <h3>Bluetooth Earphones</h3>
+            <p>Compact and comfortable earphones with high-quality sound.</p>
+            <div class="price">₱1,499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://c4.wallpaperflare.com/wallpaper/975/145/272/close-up-clothes-iron-home-appliance-wallpaper-preview.jpg" alt="Iron">
+            <h3>Iron</h3>
+            <p>Gusto mo Plantsa, para sa damit pero yung handle ang umiinit.</p>
+            <div class="price">₱499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://media.istockphoto.com/id/1397358808/vector/art-illustration.jpg?s=612x612&w=0&k=20&c=86AmbgD-X8_4sqyrnbv6YpglZDZ7CNymNbDEgZrWDDY=" alt="Electric Fan" width="150" height="180">
+            <h3>Electric Fan</h3>
+            <p>Kung naiinitan, mag-electric fan Ang umiikot ay 'yung katawan.</p>
+            <div class="price">₱799.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://st2.depositphotos.com/3718739/9015/i/950/depositphotos_90150034-stock-photo-electric-stovetop-on-white-background.jpg" alt="Electric Stove">
+            <h3>Electric Stove</h3>
+            <p>Kalan na gawa sa Japan lumalabas and apoy doon sa pihitan.</p>
+            <div class="price">₱999.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+        <div class="product-card">
+            <img src="https://svwm.co.in/wp-content/uploads/2024/06/8777-FRONT-GOLDEN-IMGL9933-QQQ-09-08-2023White-Background-1.jpg" alt="Wall clock" width="150">
+            <h3>Wall clock</h3>
+            <p>Gintong wallclock galing Switzerland pero baligtad, sa harap and sabitan.</p>
+            <div class="price">₱1,499.00</div>
+            <a href="#" class="cta-button">Add To Cart</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="padding: 20px;">
+  
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <h3>Get in Touch</h3>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 GRC Store. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

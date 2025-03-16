@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: #ff7200;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
+#products {
+    padding: 2rem;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 200px;
+    position: relative;
+    overflow: hidden; /* Ensures button is hidden outside product */
+    transition: transform 0.3s ease;
+}
+
+.product:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product:hover .price {
+    content: "$12";
+    font-size: 1.2rem;
+    color: red;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product p.price {
+    margin-top: 5px;
+    font-size: 1rem;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+/* Hover Content (Add to Cart Button) */
+.hover-content {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.add-to-cart {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-to-cart:hover {
+    background-color: #187bcd;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input, #contact textarea {
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#contact button {
+    background-color: #ff7200;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #187bcd;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+    
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>GRC Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file:///C:/Users/GRC/Documents/home.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to GRC</h2>
+        <p>Explore the best mobile phones at unbeatable prices!</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/products/ipad-9-2021-wi-fi-546764_800x.png?v=1737541166" alt="iPad 9iPad 9">
+                <h3>iPad 9</h3>
+                <p class="price">₱13,950</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/products/ipad-air-5-wifi-870797_800x.jpg?v=1737541160"alt="iPad Air 5 (2022) Wifi">
+                <h3>iPad Air 5</h3>
+                <p class="price">₱28,450</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/CompAsiaPhilippinesAppleiPad10WiFiSilver_800x.png?v=1741139548" alt="iPad 10th Gen">
+                <h3>iPad 10th Gen</h3>
+                <p class="price">₱23,450</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/products/ipad-pro-11-2018-wifi-886406_800x.jpg?v=1737541165" alt="iPad Pro 11">
+                <h3>iPad Pro 11</h3>
+                <p class="price">₱19,450</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/ipad-air-11-2024-wi-fi-628885_800x.png?v=1741459807" alt="iPad Air 11">
+                <h3>iPad Air 11</h3>
+                <p class="price"> ₱42,950</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+          
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/galaxy-tab-s9-fe-wifi-286966_600x.png?v=1737542567" alt="Galaxy Tab S9">
+                <h3> Galaxy Tab S9</h3>
+                <p class="price"> ₱18,450</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/galaxy-tab-s7-wifi-233925_800x.png?v=1737542609" alt="Galaxy Tab S7 ">
+                <h3>Galaxy Tab S7 </h3>
+                <p class="price">₱14,950</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/galaxy-tab-a9-plus-wifi-473754_800x.png?v=1737542561" alt="Galaxy Tab A9 Plus">
+                <h3>Galaxy Tab A9 Plus</h3>
+                <p class="price">₱8,450</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/galaxy-tab-s9-5g-272904_800x.png?v=1737542566" alt="Galaxy Tab S9 5G">
+                <h3>Galaxy Tab S9 5G</h3>
+                <p class="price">₱33,950.00</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://compasia.com.ph/cdn/shop/files/galaxy-tab-s9-fe-plus-5g-w-spen-875574_800x.png?v=1737542569" alt="Galaxy Tab S9 FE Plus">
+                <h3>Galaxy Tab S9 FE Plus</h3>
+                <p class="price">₱28,950</p>
+                <div class="hover-content">
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please reach out to us:</p>
+        <form action="submit-form.php" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 GRC Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
